@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="shortcut icon" href="imgs/iconedosite.png" type="image/x-icon">
+    <link rel="icon" href="imgs/v.png" type="image/x-icon">
+	<title>Projetando o Futuro</title>
+    <link rel="stylesheet" type="text/css" href="styleboot.css">
+
+    <!--Bibliotecas do AutoComplete-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="jeysPag2.js"></script>
+    <script src="jeysMenu.js"></script>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            
+            <div class="col-md-auto"><!--CABEÇALHO--> 
+                <div id="img"></div>
+                <div id="retangulo">
+                    <p>PROJETANDO O FUTURO</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--MODAL-->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content" style="background-size: cover; "> <!--background-image:url('imagens/i11.jpg')-->
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="bodymodal">
+                        <p id="onick"></p>
+                        
+                        <div id="modificadorsenha">
+                            <form>
+                                <div class="form-group ">
+                                    <label for="inputPassword6">Senha antiga</label>
+                                    <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpInline">
+                                    <small id="passwordHelpInline" class="text-muted">
+                                      Must be 8-20 characters long.
+                                    </small>
+                                </div>
+            
+                                <div class="form-group ">
+                                    <label for="inputPassword6">Nova Senha</label>
+                                    <input type="password" id="senha2" class="form-control" aria-describedby="passwordHelpInline">
+                                    <small id="passwordHelpInline" class="text-muted">
+                                      Must be 8-20 characters long.
+                                    </small>
+                                </div>
+                            </form>
+                        </div>
+                        <form id="formDaImagem">
+                            <div class="input-group mb-3" id="alterandoimagem">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroupFileAddon01">Imagem</span>
+                                </div>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" name="foto" accept="image/png, image/jpg, image/jpeg" id="idImagem" aria-describedby="inputGroupFileAddon01">
+                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" id="enviando_anothers">Enviar Cadastro</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL-->
+        <div class="modal fade" id="mandarparaologin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" style="background-size: cover; "> <!--background-image:url('imagens/i11.jpg')-->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="bodymodal">
+                 
+                    <a href="inicial.html"><button type="sucess">Vá para o login</button></a>
+                    
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="enviando_anothers">Enviar Cadastro</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+        <!--MODAL PARA O AVALIADOR-->
+        <div class="modal" id="modalAvaliador" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content" style="background-size: cover; "> <!--background-image:url('imagens/i11.jpg')-->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">PROJETO</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" id="info" class="btn btn-info">Informações</button>
+                    <div id="bodyModalAvaliadorInformacoes">
+                        <h3 id="modalNome"></h3>
+                        <h5 id="modalNick_name"></h5>
+                        <br>
+                        <p id="modalResumo"></p>
+                        
+                        <h5>IMAGEM</h5>
+                        <div id="modalImagem"></div>
+    
+                        <h4>PDF</h4>
+                        <div id="modalPdf"></div>
+                    </div>
+                    <br>
+                    <div id="avaliacao">
+                        <form>
+                            <hr>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Nota</label>
+                                <input type="number" class="form-control" id="notaavalaiacao" placeholder="Tenha critérios justos para a avaliação">
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Observação</label>
+                                <textarea class="form-control" id="observacao" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="enviando_avaliacao">Enviar Avaliação</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col"> <!--MENU-->
+                <div class="d-flex">
+                    <div class="btn-group">
+                      
+                        <button type="button" id="botaomenu" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                            <span class="iconify"   data-inline="false" data-icon="mdi:microsoft-xbox-controller-menu" style="color: #3b3b3b; font-size: 58px;"></span>
+                        </button>
+                        <div class="dropdown-menu" id="manu" aria-labelledby="dropdownMenuReference">
+                            
+                            <div id="imagemUsuario"></div>
+
+                           
+                            <p id="nomeUsuario"></p>
+                            
+
+                            <hr>
+                            <br>
+                            <a id="redefinirsenha" style="text-decoration: none; color: white;">Redefinir Senha</a>
+                           
+                            <hr>
+                            <a id="alterarimagem" style="text-decoration: none; color: white;">Alterar Imagem</a>
+                            <hr>
+                            <a style="text-decoration: none; color: white;" class="alterarDadosBancarios">Dados Bancários</a>
+                            <hr class="alterarDadosBancarios">
+                            <a style="text-decoration: none; color: white;">Alterar Tipo de Usuário</a>
+                            <hr >
+                            <a style="text-decoration: none; color: #F74141;" id="sairDoTrem">Sair</a>
+                            <hr>
+                        </div>
+                    </div>
+                  </div>
+                     
+            </div>
+            <div class="col-sm-8"><!--NAVIGATION-->
+                <div id="retangulo2">
+                    <a id="bfeed">
+                        <span class="iconify" id="iconfeed" data-inline="false" data-icon="gg:feed" style="color: white; font-size: 79px;"></span>
+                    </a>
+                    <a id="minhaarea">
+                        <span class="iconify" id="iconpdf" data-inline="false" data-icon="emojione-monotone:letter-m" style="color: white;font-size: 67px;"></span>
+                    </a>
+                    <a href="boot - pag6 - 3D.html" id="tresd">
+                        <span class="iconify" id="icon3d" data-inline="false" data-icon="carbon:chart-3d" style="color: #fff9f9; font-size: 64px;"></span>
+                    </a>
+                    <div id="retangulo3">
+                        <a href="inicial.html">
+                            <span class="iconify" id="iconeusuario" a data-inline="false" data-icon="fa-solid:user" style="color: #fffcfc; font-size: 35px;"></span>
+                        </a>
+                        <span class="iconify" id="iconefilter" data-inline="false" data-icon="el:filter" style="color: #fffcfc; font-size: 30px; "></span>
+                        <span class="iconify" id="iconepesquisa" data-inline="false" data-icon="foundation:magnifying-glass" style="color: #fff4f4; font-size: 38px;"></span>
+                       
+                        <input type="text" id="buscar" style="height: 30px; width: 310px;">
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col"> <!--CONVERSA-->
+                <span class="iconify" id="iconeconversa" data-inline="false" style="color: #3b3b3b"; data-icon="ps:chat-alt" style="font-size: 84px;"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-sm-8" id="FeedProjetos"> <!--PROJETOS-->
+                <ul class="list-unstyled" id="aquiAdiciona">
+                    <hr>
+                    <div>     
+                        <div class="configuration" style="margin-left: 750px; float:right; margin-top: -180px;"><span class="iconify" data-inline="false" data-icon="file-icons:config-ruby" style="font-size: 50px; color: red;"></span></div>
+                    </div>
+                </ul>
+                <div id="exibirErro"></div>
+                
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+
+
+</html>

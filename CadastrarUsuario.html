@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="shortcut icon" href="imgs/iconedosite.png" type="image/x-icon">
+    <link rel="icon" href="imgs/v.png" type="image/x-icon">
+	  <title>Projetando o Futuro</title>
+    
+    <link rel="stylesheet" type="text/css" href="styleboot.css">
+</head>
+<body>
+    <script src="jeysLogin.js"></script>
+
+    
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            
+            <div class="col-md-auto"><!--CABEÇALHO--> 
+                <div id="img"></div>
+                <div id="retangulo">
+                    <p>PROJETANDO O FUTURO</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            
+        </div>
+        <div class="row">
+            
+            <!--MODAL-->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content" style="background-size: cover; "> <!--background-image:url('imagens/i11.jpg')-->
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="bodymodal">
+                        <p id="onick"></p>
+                        <div id="bodyEscolha">
+                            <p>Parabens agora vamos passar para a segunda fase!</p>
+                            <h5>Escolha uma das opções abaixo!</h5>
+                            
+                            <button type="button" class="escolha btn-danger" id="desenvolvedor">DESENVOLVEDOR</button>
+                            <button type="button" class="escolha btn-danger" id="avaliador">AVALIADOR</button>
+                            <button type="button" class="escolha btn-danger" id="consumidor">CONSULMIDOR</button>
+    
+                        </div>
+                        
+                        <div id="bodyAvaliador">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Local de Formação</label>
+                                  <input type="text" class="form-control" id="avaliadorLocal" aria-describedby="emailHelp">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <label for="basic-url">Curriculo Lattes</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon3">https://lattes.com/users/</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="avaliadorLattes" aria-describedby="basic-addon3">
+                                </div>
+                                
+                            </form>
+                        </div>
+
+                        <div id="bodyDesenvolvedor">
+                            <form>
+                                <label for="basic-url">Curriculo Lattes</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon3">https://lattes.com/users/</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="urlDesenvolvedor" aria-describedby="basic-addon3">
+                                </div>
+                                
+                                
+                            </form>
+                        </div>
+
+                        <div id="bodycomumpro">
+                          <button type="button" class="escolha btn-danger" id="dcomum">COMUM</button>
+                          <button type="button" class="escolha btn-danger" id="dpro">PRÓ</button>
+                        </div>
+
+                        <div id="bodyConsumidor">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Sexo</label>
+                                    <input type="text" class="form-control" id="inputSexoConsumidor" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div> 
+                            </form>
+                        </div>
+
+                        <div id="bodyDesenvolvedorComum">
+                          <form>
+                              <div class="form-group">
+                                  <label for="exampleInputEmail1">Instituição de Ensino</label>
+                                  <input type="text" class="form-control" id="inputInstituicao" aria-describedby="emailHelp">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div> 
+                          </form>
+                      </div>
+
+                        <div id="bodyPRO">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Nome do Banco</label>
+                                    <input type="text" class="form-control" id="inputNomeBancoPro" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Número da Agência</label>
+                                    <input type="text" class="form-control" id="inputNumeroAgencia" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Número da Conta</label>
+                                    <input type="text" class="form-control" id="inputNumeroConta" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Tipo de Conta</label>
+                                    <input type="text" class="form-control" id="inputTipoConta" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+
+                                
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" id="enviando_cadastro">Enviar Cadastro</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <div class="col"></div>
+            <div class="col-sm-8" id="FeedProjetos"> <!--USUARIO-->
+                <br>
+                <form id="formularioUsuario">
+                    <div class="form-group">
+                        <label for="inputPassword6">Nome</label>
+                        <input type="text" id="nome" class="form-control" aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">
+                          Informe o nome completo, por favor.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword6">Nick-Name</label>
+                        <input type="text" id="nick" class="form-control" aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">
+                          Seja criativo!
+                        </small>
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputPassword6">Password</label>
+                        <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">
+                          Must be 8-20 characters long.
+                        </small>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="inputPassword6">Re Password</label>
+                        <input type="password" id="senha2" class="form-control" aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">
+                          Must be 8-20 characters long.
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="validationCustom04">Nivel de Escolaridade</label>
+                        <select class="custom-select" id="nivelescolaridade" required>
+                          <option selected disabled value="">Escolha...</option>
+                          <option>Ensino Médio Completo</option>
+                          <option>Faculdade</option>
+                          <option>Ensino Médio Incompleto</option>
+                          <option>Graduação</option>
+                          <option>Pós-Graduação</option>
+                          <option>Técnico</option>
+                          <option>Auto de Data</option>
+                          <option>Outro</option>
+
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                    
+                    
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                          <label for="validationCustom01">CEP</label>
+                          <input type="text" class="form-control" id="cep" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3 invisiveis">
+                          <label for="validationCustom02">Logradouro</label>
+                          <input type="text" class="form-control" id="logradouro" value="Otto" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row invisiveis">
+                        <div class="col-md-6 mb-3" >
+                          <label for="validationCustom03">Cidade</label>
+                          <input type="text" class="form-control" id="cidade" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <label for="validationCustom04">Estado</label>
+                          <input type="text" class="form-control" id="estado" required>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-1">
+                            <label for="validationCustom03">Numero</label>
+                            <input type="number" class="form-control" id="numero" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                        
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupFileAddon01">Imagem para seu Perfil</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" name="foto" accept="image/png, image/jpg, image/jpeg" id="idImagem" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                     </div>
+
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                      
+                    
+                    
+                  </form>
+                  <button class="btn btn-primary" type="button" id="EnviarForma">Enviar</button>
+                  <br><br>
+                  
+            </div>
+            <div class="col"></div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,112 @@
+#principal{
+
+position: relative;
+width: 1250px;
+height: 1024px;
+}
+
+#cabeçalho{
+
+position: absolute;
+left: 10.95%;
+right: 13.72%;
+top: 1.04%;
+bottom: 87.65%;
+text-align: center;
+border-radius: 8px;
+
+background-color: black;
+mix-blend-mode: difference;
+}
+#cabeça{
+	color: white;
+	
+	font-size: 50px;
+	margin-top: 20px;
+}
+#divLogin{
+
+position: absolute;
+left: 15.62%;
+right: 57.08%;
+top: 23.03%;
+bottom: 77.71%;
+text-align: center;
+margin-top: -50px;
+border-radius: 5px;
+
+background: #3B3B3B;
+}
+#Login{
+	font-size: 30px;
+	color: white;
+	margin-top: 2px;
+}
+#divGLogin{
+
+position: absolute;
+left: 12.1%;
+right: 51.96%;
+top: 35.6%;
+bottom: 28.93%;
+margin-top: -90px;
+border-radius: 5px;
+text-align: center;
+
+background: #C4C4C4;
+}
+.email{
+	margin-left: 10px;
+}
+.BarraEmails{
+
+width: 300px;
+height: 50px;
+margin-left: 10px;
+border-radius: 5px;
+}
+#BConfirmar{
+
+width: 200px;
+height: 50px;
+color: white;
+background: #131212;
+}
+#Cadastre{
+
+position: absolute;
+left: 50.21%;
+right: 15.85%;
+top: 35.6%;
+bottom: 28.93%;
+margin-top: -90px;
+text-align: center;
+
+background: #C4C4C4;
+}
+#DivCadastro{
+
+position: absolute;
+left: 52.24%;
+right: 18.46%;
+top: 23.03%;
+bottom: 77.71%;
+text-align: center;
+margin-top: -50px;
+border-radius: 5px;
+
+background: #3B3B3B;
+}
+#DivAle{
+	width: 300px;
+	height: 200px;
+	background-color: red;
+	border: solid black 3px;
+	border-radius: 5px;
+	margin-left: 80px;
+	text-align: center;
+}
+#BemVindo{
+	margin-top: 80px;
+	color: white;
+}
